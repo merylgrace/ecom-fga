@@ -65,3 +65,13 @@ async function fetchAndDisplayProducts() {
         console.error('Error fetching data:', error);
     }
 }
+
+function addToCart(product) {
+    const existingItem = cartItems.find(item => item.id === product.id);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cartItems.push({ ...product, quantity: 1 });
+    }
+}
