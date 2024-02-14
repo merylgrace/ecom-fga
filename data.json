@@ -2,10 +2,18 @@
     {
         "id": 1,
         "name": "notebook",
-        "description": "a small book with ruled pages for writing notes in",
+        "description": "A5 in size with 80 leaves",
         "price": 39.45,
         "date added": "2024-02-14",
         "image": "https://misterart.b-cdn.net/static/images/skupix/1200x1600/0/s03505.jpg?width=346&sharpen=true"
+    },
+    {
+        "id": 2,
+        "name": "yellow pad",
+        "description": "a lined paper used by college students; 80 leaves",
+        "price": 54.75,
+        "date added": "2024-02-14",
+        "image": "https://down-ph.img.susercontent.com/file/cdd3e6f45c7e04c048988f37e0f64a5f_tn"
     }
 
 ]
