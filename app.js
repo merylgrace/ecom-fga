@@ -103,3 +103,13 @@ function incrementQuantity(productId) {
         updateCartTable();
     }
 }
+
+function decrementQuantity(productId) {
+    const item = cartItems.find(item => item.id === productId);
+    if (item && item.quantity > 1) {
+        item.quantity -= 1;
+        updateCartTable();
+    }
+}
+
+fetchAndDisplayProducts();
