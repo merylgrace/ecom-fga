@@ -95,3 +95,11 @@ function updateCartTable() {
         cartTableBody.appendChild(row);
     });
 }
+
+function incrementQuantity(productId) {
+    const item = cartItems.find(item => item.id === productId);
+    if (item) {
+        item.quantity += 1;
+        updateCartTable();
+    }
+}
