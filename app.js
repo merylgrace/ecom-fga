@@ -75,3 +75,23 @@ function addToCart(product) {
         cartItems.push({ ...product, quantity: 1 });
     }
 }
+
+function updateCartTable() {
+    const cartTableBody = document.getElementById('cart-items');
+    cartTableBody.innerHTML = '';
+
+    cartItems.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${item.name}</td>
+            <td>₱${item.price}</td>
+            <td>
+                <button class="btn btn-secondary" onclick="decrementQuantity(${item.id})">-</button>
+                ${item.quantity}
+                <button class="btn btn-secondary" onclick="incrementQuantity(${item.id})">+</button>
+            </td>
+            <td>₱${item.price * item.quantity}</td>
+        `;
+        cartTableBody.appendChild(row);
+    });
+}
