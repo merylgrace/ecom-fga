@@ -13,7 +13,15 @@
         "description": "a lined paper used by college students; 80 leaves",
         "price": 54.75,
         "date added": "2024-02-14",
-        "image": "https://down-ph.img.susercontent.com/file/cdd3e6f45c7e04c048988f37e0f64a5f_tn"
+        "image": "https://www.officewarehouse.com.ph/__resources/_web_data_/products/products/images/4637.JPG"
+    },
+    {
+        "id": 3,
+        "name": "panda pens",
+        "description": "good quality pens colors blue, black, and red",
+        "price": 27.34,
+        "date added": "2024-02-14",
+        "image": "https://3.bp.blogspot.com/-7ifmlgvHkIk/U-Rquu_KmDI/AAAAAAAADe8/RDui3mt6stM/s1600/Panda+ballpen.jpg"
     }
 
 ]
