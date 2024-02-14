@@ -1,10 +1,8 @@
-const apiUrl = 'data.json';
-
 let cartItems = [];
 
 async function fetchAndDisplayProducts() {
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch('data.json');
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -28,15 +26,15 @@ async function fetchAndDisplayProducts() {
 
             const productName = document.createElement('h5');
             productName.classList.add('card-title');
-            productName.textContent = `Name: ${product.name}` ;
+            productName.textContent = `Name: ${product['name']}`;
 
             const productDescription = document.createElement('p');
             productDescription.classList.add('card-text');
-            productDescription.textContent = `Description: ${product.description}`;
+            productDescription.textContent = `Description: ${product['description']}`;
 
             const productPrice = document.createElement('p');
             productPrice.classList.add('card-text');
-            productPrice.textContent = `Price: ₱${product.price}`;
+            productPrice.textContent = `Price: ₱${product['price']}`;
 
             const productDate = document.createElement('p');
             productDate.classList.add('card-text');
@@ -55,7 +53,7 @@ async function fetchAndDisplayProducts() {
             cardBody.appendChild(productDescription);
             cardBody.appendChild(productPrice);
             cardBody.appendChild(productDate);
-            cardBody.appendChild(addToCartButton); 
+            cardBody.appendChild(addToCartButton);
 
             productCard.appendChild(cardImg);
             productCard.appendChild(cardBody);
