@@ -30,6 +30,14 @@
         "price": 73.49,
         "date added": "2024-02-14",
         "image": "https://ph-test-11.slatic.net/p/d96534a0ef6499894220102259dc6f45.jpg"
+    },
+    {
+        "id": 5,
+        "name": "binder notebook",
+        "description": "a notebook with ten mini notebooks inside it",
+        "price": 147.99,
+        "date added": "2024-02-14",
+        "image": "https://ph-live-01.slatic.net/p/ff7b74f29042ec4f6fde959d31900080.jpg"
     }
 
 ]
